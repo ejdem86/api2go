@@ -1460,8 +1460,9 @@ var _ = Describe("RestHandler", func() {
 
 			api = NewAPIWithRouting(testPrefix, NewStaticResolver(""), newTestRouter())
 			api.AddResource(Post{}, source)
-			MiddleTest := func(c APIContexter, w http.ResponseWriter, r *http.Request) {
+			MiddleTest := func(c APIContexter, w http.ResponseWriter, r *http.Request) error {
 				w.Header().Add("x-test", "test123")
+				return nil
 			}
 			api.UseMiddleware(MiddleTest)
 			rec = httptest.NewRecorder()

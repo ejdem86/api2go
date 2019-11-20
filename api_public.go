@@ -10,7 +10,7 @@ import (
 )
 
 // HandlerFunc for api2go middlewares
-type HandlerFunc func(APIContexter, http.ResponseWriter, *http.Request)
+type HandlerFunc func(APIContexter, http.ResponseWriter, *http.Request) error
 
 // API is a REST JSONAPI.
 type API struct {

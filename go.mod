@@ -13,3 +13,5 @@ require (
 	github.com/valyala/fasttemplate v1.0.1 // indirect
 	gopkg.in/guregu/null.v2 v2.1.3-0.20150913203334-4ac4f00378f4
 )
+
+go 1.13

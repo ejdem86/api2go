@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/manyminds/api2go/jsonapi"
-	"github.com/manyminds/api2go/routing"
+	"github.com/ejdem86/api2go/jsonapi"
+	"github.com/ejdem86/api2go/routing"
 )
 
 // HandlerFunc for api2go middlewares

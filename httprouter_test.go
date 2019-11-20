@@ -5,7 +5,7 @@ package api2go
 import (
 	"log"
 
-	"github.com/manyminds/api2go/routing"
+	"github.com/ejdem86/api2go/routing"
 )
 
 func newTestRouter() routing.Routeable {
